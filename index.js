@@ -12,7 +12,7 @@ const app = express();
 
 // CORS configuration
 app.use(cors({
-    origin: 'https://teamprojectx.netlify.app/',
+    origin: 'https://teamprojectx.netlify.app',
     methods: ['POST', 'GET', 'PUT', 'DELETE', 'OPTIONS'], // Allow all standard methods
     credentials: true, // Allow credentials (e.g., cookies, authorization headers)
 }));
