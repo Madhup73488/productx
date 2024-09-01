@@ -8,8 +8,12 @@ dotenv.config();
 
 // Initialize Express
 const app = express();
+
 const cors = require('cors');
-app.use(cors());
+app.use(cors({
+    origin: 'https://teamprojectx.netlify.app', // Replace with your Netlify domain
+    credentials: true,
+}));
 // Middleware to parse JSON
 app.use(express.json());
 
