@@ -11,7 +11,9 @@ const app = express();
 
 const cors = require('cors');
 app.use(cors({
-    origin: 'https://teamprojectx.netlify.app', // Replace with your Netlify domain
+    origin: 'https://teamprojectx.netlify.app',
+    // Replace with your Netlify domain
+    methods: ['POST', 'GET'],
     credentials: true,
 }));
 // Middleware to parse JSON
